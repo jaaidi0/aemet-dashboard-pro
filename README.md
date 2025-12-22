@@ -13,38 +13,73 @@ Dashboard geoespacial (Streamlit) con **ETL robusta**, **caché inteligente** y 
 ---
 
 ## 🔗 Live Demo
+**App en vivo:**  
+👉 [https://aemet-dashboard-pro-3s9ay3cnvowfgvrutqvh4w.streamlit.app](https://aemet-dashboard-pro-3s9ay3cnvowfgvrutqvh4w.streamlit.app)
 
-> **URL en vivo (Streamlit Cloud):**  
-> **https://aemet-dashboard-pro-3s9ay3cnvowfgvrutqvh4w.streamlit.app/**
-
-Badge de Streamlit:  
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://aemet-dashboard-pro-3s9ay3cnvowfgvrutqvh4w.streamlit.app/)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://aemet-dashboard-pro-3s9ay3cnvowfgvrutqvh4w.streamlit.app)
 
 ---
 
 ## ✨ Características
+*(igual que antes)*
 
-- **Datos en (casi) tiempo real** desde **AEMET OpenData** (36+ registros/día).
-- **Fallback CSV** cuando la API falla o hay timeout.
-- **Caché inteligente** (5–30 min por endpoint).
-- **3 estaciones** por defecto: Sevilla (**5783**), Córdoba (**5788X**), Jaén (**5790Y**).
-- **5 pestañas**:
-  1. Series Temporales (temp/precipitación, medias móviles).
-  2. Índices & Anomalías (THI, Humidex, Dew Point, z‑score ≥ 2.5).
-  3. Análisis Avanzado (histogramas, correlaciones, semanal).
-  4. Estadísticas (descriptivas + tabla de anomalías).
-  5. Exportar (CSV/JSON + vista previa).
-- **Visualizaciones**: 10+ gráficos interactivos (Plotly), tema `plotly_white`.
-- **Mapa estático** con **Folium** (sin “baile”).
-- **Exportación**: CSV/JSON, filtros (7/14/30/90 días, completo o rango personalizado).
+---
+
+## 🖼️ Capturas del Dashboard
+
+### 🗺️ Mapa de Estaciones
+![Mapa Estaciones](docs/screenshots/mapa_estaciones.png)
+
+### 📈 Series Temporales
+![Series Temporales](docs/screenshots/series_temporales.png)
+
+### 🌡️ Índices & Anomalías
+![Índices y Anomalías](docs/screenshots/indices_anomalias.png)
+
+### 📊 Análisis Avanzado
+![Análisis Avanzado](docs/screenshots/analisis_avanzado.png)
+
+### 📥 Exportación
+![Exportación](docs/screenshots/exportar_datos.png)
 
 ---
 
 ## 🧭 Arquitectura & Estructura
-*(Aquí puedes añadir el bloque de arquitectura y estructura que ya tienes en tu README original)*
+*(igual que antes)*
 
 ---
 
-✅ Ahora tu README está listo para mostrar el **link real** y el **badge oficial**.  
-¿Quieres que también te prepare atractivo en GitHub?
+## ⚙️ Instalación
+*(igual que antes)*
+
+---
+
+## 🔐 Configuración
+*(igual que antes)*
+
+---
+
+## ▶️ Ejecución local
+*(igual que antes)*
+
+---
+
+## 🚀 Despliegue
+*(igual que antes)*
+
+---
+
+## 🗂️ Datos y Referencias
+*(igual que antes)*
+
+---
+
+## 📄 Licencia
+MIT License.
+
+---
+
+## 👤 Autor
+**Mostapha Jaaidi (jaaidi0)**  
+🌐 https://jaaidi0.github.io · 💼 https://www.linkedin.com/in/el-jaidi/
 
