@@ -15,11 +15,10 @@ Dashboard geoespacial (Streamlit) con **ETL robusta**, **caché inteligente** y 
 ## 🔗 Live Demo
 
 > **URL en vivo (Streamlit Cloud):**  
-> **https://aemet-dashboard-pro.streamlit.app**  
-> *(Si tu despliegue genera otro subdominio, reemplázalo aquí.)*
+> **https://aemet-dashboard-pro-3s9ay3cnvowfgvrutqvh4w.streamlit.app/**
 
 Badge de Streamlit:  
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://aemet-dashboard-pro.streamlit.app)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://aemet-dashboard-pro-3s9ay3cnvowfgvrutqvh4w.streamlit.app/)
 
 ---
 
@@ -42,4 +41,10 @@ Badge de Streamlit:
 ---
 
 ## 🧭 Arquitectura & Estructura
+*(Aquí puedes añadir el bloque de arquitectura y estructura que ya tienes en tu README original)*
+
+---
+
+✅ Ahora tu README está listo para mostrar el **link real** y el **badge oficial**.  
+¿Quieres que también te prepare atractivo en GitHub?
 
