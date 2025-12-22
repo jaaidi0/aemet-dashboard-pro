@@ -55,19 +55,19 @@ Dashboard geoespacial (Streamlit) con **ETL robusta**, **caché inteligente** y 
 *(Sube tus imágenes a `docs/screenshots/` y ajusta las rutas)*
 
 ### 🗺️ Mapa de Estaciones
-![Mapa](docs/screenshots/mapa_estaciones.png)
+![Mapa](https://aemet-dashboard-pro-3s9ay3cnvowfgvrutqvh4w.streamlit.app/)
 
 ### 📈 Series Temporales
-![Series](docs/screenshots/series_temporales.png)
+![Series](https://aemet-dashboard-pro-3s9ay3cnvowfgvrutqvh4w.streamlit.app/)
 
 ### 🌡️ Índices & Anomalías
-![Índices](docs/screenshots/indices_anomalias.png)
+![Índices](https://aemet-dashboard-pro-3s9ay3cnvowfgvrutqvh4w.streamlit.app/)
 
 ### 📊 Análisis Avanzado
-![Análisis](docs/screenshots/analisis_avanzado.png)
+![Análisis](https://aemet-dashboard-pro-3s9ay3cnvowfgvrutqvh4w.streamlit.app/)
 
 ### 📥 Exportación
-![Exportar](docs/screenshots/exportar_datos.png)
+![Exportar](https://aemet-dashboard-pro-3s9ay3cnvowfgvrutqvh4w.streamlit.app/)
 
 ---
 
