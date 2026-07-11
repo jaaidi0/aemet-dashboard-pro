@@ -22,8 +22,8 @@ def enrich_indices(df: pd.DataFrame) -> pd.DataFrame:
 
     df = df.copy()
 
-    # ============================================================
-    # NORMALIZAR NOMBRES DE COLUMNAS AEMET
+      # ============================================================
+    # NORMALIZAR COLUMNAS AEMET
     # ============================================================
 
     if "ta" in df.columns:
@@ -36,10 +36,10 @@ def enrich_indices(df: pd.DataFrame) -> pd.DataFrame:
         df["humedad"] = pd.to_numeric(df["hr"], errors="coerce")
         df["humedad_media"] = pd.to_numeric(df["hr"], errors="coerce")
 
-    if "temp_max" not in df.columns:
+    if "temp_max" not in df.columns and "temp_media" in df.columns:
         df["temp_max"] = df["temp_media"]
 
-    if "temp_min" not in df.columns:
+    if "temp_min" not in df.columns and "temp_media" in df.columns:
         df["temp_min"] = df["temp_media"]
 
     # -----------------------------------------------------------
