@@ -15,15 +15,32 @@ logger = logging.getLogger(__name__)
 # 🧮 ENRICH INDICES (cálculos seguros y a prueba de errores)
 # ================================================================
 def enrich_indices(df: pd.DataFrame) -> pd.DataFrame:
-    """
-    Enriquece el DataFrame con índices térmicos, acumulados y detección de anomalías.
-    Maneja casos extremos y datos faltantes de forma robusta.
-    """
+
     if df.empty:
         logger.warning("⚠️ DataFrame vacío recibido en enrich_indices")
         return df
-    
+
     df = df.copy()
+
+    # ============================================================
+    # NORMALIZAR NOMBRES DE COLUMNAS AEMET
+    # ============================================================
+
+    if "ta" in df.columns:
+        df["temp_media"] = pd.to_numeric(df["ta"], errors="coerce")
+
+    if "prec" in df.columns:
+        df["lluvia"] = pd.to_numeric(df["prec"], errors="coerce")
+
+    if "hr" in df.columns:
+        df["humedad"] = pd.to_numeric(df["hr"], errors="coerce")
+        df["humedad_media"] = pd.to_numeric(df["hr"], errors="coerce")
+
+    if "temp_max" not in df.columns:
+        df["temp_max"] = df["temp_media"]
+
+    if "temp_min" not in df.columns:
+        df["temp_min"] = df["temp_media"]
 
     # -----------------------------------------------------------
     # 1. NORMALIZAR COLUMNAS NUMÉRICAS
