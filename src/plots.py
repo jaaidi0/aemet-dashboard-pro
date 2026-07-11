@@ -13,23 +13,36 @@ import plotly.express as px
 # ================================================================
 def crear_grafico_temperatura(df):
     fig = go.Figure()
+
+    if "temp_media" not in df.columns:
+        fig.update_layout(
+            title="No hay datos de temperatura disponibles",
+            height=400
+        )
+        return fig
+
     fig.add_trace(go.Scatter(
-        x=df["fecha"], y=df["temp_media"],
-        name="🌡️ Temp media", mode="lines+markers",
+        x=df["fecha"],
+        y=df["temp_media"],
+        name="🌡️ Temp media",
+        mode="lines+markers",
         line=dict(width=2)
     ))
 
-    # Tendencia 7 días (ASEGURADO por preprocessing)
     if "temp_media_mov7" in df.columns:
         fig.add_trace(go.Scatter(
-            x=df["fecha"], y=df["temp_media_mov7"],
+            x=df["fecha"],
+            y=df["temp_media_mov7"],
             name="📈 Tendencia 7d",
-            line=dict(width=2, dash='dash')
+            line=dict(width=2, dash="dash")
         ))
 
-    fig.update_layout(title="Evolución de Temperaturas", height=400)
-    return fig
+    fig.update_layout(
+        title="Evolución de Temperaturas",
+        height=400
+    )
 
+    return fig
 
 # ================================================================
 # 🌧️ 2 — PRECIPITACIÓN
