@@ -259,6 +259,8 @@ def main():
 
     # 2. PROCESAMIENTO (Silencioso gracias a @cache_data)
     dfp, stats = procesar_datos_dashboard(df, dias)
+    st.write("COLUMNAS:")
+    st.write(dfp.columns.tolist())
 
     # KPIs Principales
     k1, k2, k3, k4 = st.columns(4)
